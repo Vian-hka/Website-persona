@@ -4,61 +4,53 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
-    background: url(https://pngtree.com/freebackground/cartoon-satellite-ruler-calculator-linear-education-background_1458755.html) no-repeat center center fixed;
-    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .calculator {
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.display {
+#display {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.5em;
-    text-align: right;
-    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-.button {
-    width: 23%;
-    padding: 15px;
-    margin: 5px;
-    font-size: 1.2em;
-    border: 1px solid #ccc;
+.btn {
+    font-size: 18px;
+    padding: 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    background: #f4f4f4;
-    transition: background 0.3s;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
 }
 
-.button:active {
-    background: #e0e0e0;
-}
-
-.button.operator {
-    background: #f0ad4e;
-    color: white;
-}
-
-.button.operator:active {
-    background: #ec971f;
-}
-
-.button.double {
-    width: 48%;
+.btn:hover {
+    background-color: #ddd;
 }
