@@ -22,6 +22,7 @@ h1 {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
 }
 
 #display {
@@ -33,6 +34,7 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .buttons {
@@ -47,10 +49,23 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #f1f1f1;
-    transition: background-color 0.3s;
+    background-color: #f4f4f4; /* Default button color */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-    background-color: #ddd;
+    background-color: #e0e0e0;
+}
+
+.btn.operator {
+    background-color: #f0ad4e; /* Operator button color */
+    color: white;
+}
+
+.btn.operator:hover {
+    background-color: #ec971f;
+}
+
+.btn.double {
+    grid-column: span 2; /* Make the zero button span two columns */
 }
